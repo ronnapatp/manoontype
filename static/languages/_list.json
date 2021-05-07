@@ -1,6 +1,5 @@
 [
-  "thai"
-  ,"thai_manoonchai_home_basic"
+  "thai_manoonchai_home_basic"
   ,"thai_manoonchai_home_basic_shift"
   ,"thai_manoonchai_home_row"
   ,"thai_manoonchai_home_row_shift"
@@ -12,6 +11,8 @@
   ,"thai_manoonchai_lower_basic_shift"
   ,"thai_manoonchai_lower_row"
   ,"thai_manoonchai_lower_row_shift"
+  ,"thai_300"
+  ,"thai"
   ,"english"
   ,"english_1k"
   ,"english_10k"
