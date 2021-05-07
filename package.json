@@ -12,7 +12,7 @@
     "deploy:live": "npm run build && firebase deploy -P live"
   },
   "engines": {
-    "node": "10"
+    "node": ">=10"
   },
   "devDependencies": {
     "@babel/core": "^7.12.3",
