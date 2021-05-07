@@ -65,7 +65,7 @@ function clearCustomTheme() {
 export function apply(themeName) {
   clearCustomTheme();
 
-  let name = "serika_dark";
+  let name = "dark_magic_girl";
   if (themeName !== "custom") {
     name = themeName;
     UI.swapElements(

@@ -39,7 +39,7 @@ export function setChangedBeforeDb(val) {
 let loadDone;
 
 let defaultConfig = {
-  theme: "serika_dark",
+  theme: "dark_magic_girl",
   customTheme: false,
   customThemeColors: [
     "#323437",
