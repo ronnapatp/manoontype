@@ -556,6 +556,12 @@ export function updateModesNotice() {
     );
   }
 
+  if (Config.language !== "english") {
+    $(".pageTest #testModesNotice").append(
+      `<div class="text-button" commands="commandsLanguages"><i class="fas fa-language"></i>${Config.language}</div>`
+    );
+  }
+
   if (Config.oppositeShiftMode === "on") {
     $(".pageTest #testModesNotice").append(
       `<div class="text-button" commands="commandsOppositeShiftMode"><i class="fas fa-exchange-alt"></i>opposite shift</div>`
