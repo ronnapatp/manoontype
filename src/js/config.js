@@ -22,6 +22,8 @@ export let localStorageConfig = null;
 export let dbConfigLoaded = false;
 export let changedBeforeDb = false;
 
+const DEFAULT_LAYOUT = "manoonchai_v03";
+
 export function setLocalStorageConfig(val) {
   localStorageConfig = val;
 }
@@ -73,7 +75,7 @@ let defaultConfig = {
   paceCaretStyle: "default",
   flipTestColors: false,
   capsLockBackspace: false,
-  layout: "default",
+  layout: "manoonchai_v03",
   funbox: "none",
   confidenceMode: "off",
   indicateTypos: false,
@@ -84,7 +86,7 @@ let defaultConfig = {
   timerOpacity: "1",
   stopOnError: "off",
   showAllLines: false,
-  keymapMode: "off",
+  keymapMode: "next",
   keymapStyle: "staggered",
   keymapLegendStyle: "lowercase",
   keymapLayout: "overrideSync",
@@ -1349,7 +1351,7 @@ export function setKeymapStyle(style, nosave) {
 
 export function setKeymapLayout(layout, nosave) {
   if (layout == null || layout == undefined) {
-    layout = "qwerty";
+    layout = DEFAULT_LAYOUT;
   }
   config.keymapLayout = layout;
   Keymap.refreshKeys(layout, setKeymapLayout);
@@ -1358,7 +1360,7 @@ export function setKeymapLayout(layout, nosave) {
 
 export function setLayout(layout, nosave) {
   if (layout == null || layout == undefined) {
-    layout = "qwerty";
+    layout = DEFAULT_LAYOUT;
   }
   config.layout = layout;
   TestUI.updateModesNotice();
@@ -1370,7 +1372,7 @@ export function setLayout(layout, nosave) {
 
 // export function setSavedLayout(layout, nosave) {
 //   if (layout == null || layout == undefined) {
-//     layout = "qwerty";
+//     layout = DEFAULT_LAYOUT;
 //   }
 //   config.savedLayout = layout;
 //   setLayout(layout, nosave);
@@ -1782,6 +1784,8 @@ export function loadFromLocalStorage() {
     localStorageConfig = newConfig;
     saveToLocalStorage(true);
     console.log("saving localStorage config");
+  } else {
+    apply(defaultConfig);
   }
   TestLogic.restart(false, true);
   loadDone();
