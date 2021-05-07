@@ -62,7 +62,7 @@ let defaultConfig = {
   time: 30,
   mode: "time",
   quoteLength: [1],
-  language: "english",
+  language: "thai_manoonchai_home_basic",
   fontSize: 15,
   freedomMode: false,
   resultFilters: null,

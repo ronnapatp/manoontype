@@ -1,5 +1,8 @@
 [
-  "english"
+  "thai"
+  ,"thai_manoonchai_home_basic"
+  ,"thai_manoonchai_home_row"
+  ,"english"
   ,"english_1k"
   ,"english_10k"
   ,"english_25k"
@@ -35,7 +38,6 @@
   ,"italian"
   ,"italian_1k"
   ,"italian_7k"
-  ,"thai"
   ,"polish"
   ,"polish_2k"
   ,"polish_200k"
