@@ -11,6 +11,7 @@ export function highlightKey(currentKey) {
       $(".active-key").removeClass("active-key");
     }
 
+    let targetKey;
     let highlightKey;
     switch (currentKey) {
       case "\\":
@@ -49,12 +50,19 @@ export function highlightKey(currentKey) {
         highlightKey = "#KeySpace";
         break;
       default:
-        highlightKey = `#Key${currentKey}`;
+        targetKey =
+          layouts?.[window?.config?.layout].keys.find(
+            (ks) => ks[1] === currentKey
+          )?.[0] ?? currentKey;
+        highlightKey = `#Key${targetKey}`;
     }
 
     $(highlightKey).addClass("active-key");
     if (highlightKey === "#KeySpace") {
       $("#KeySpace2").addClass("active-key");
+    }
+    if (targetKey !== currentKey) {
+      $("#KeySpace").addClass("active-key");
     }
   } catch (e) {
     console.log("could not update highlighted keymap key: " + e.message);
