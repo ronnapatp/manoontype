@@ -1,115 +1,40 @@
 [
-  "thai_manoonchai_home_basic"
-  ,"thai_manoonchai_home_basic_shift"
-  ,"thai_manoonchai_home_row"
-  ,"thai_manoonchai_home_row_shift"
-  ,"thai_manoonchai_upper_basic"
-  ,"thai_manoonchai_upper_basic_shift"
-  ,"thai_manoonchai_upper_row"
-  ,"thai_manoonchai_upper_row_shift"
-  ,"thai_manoonchai_lower_basic"
-  ,"thai_manoonchai_lower_basic_shift"
-  ,"thai_manoonchai_lower_row"
-  ,"thai_manoonchai_lower_row_shift"
-  ,"thai_300"
-  ,"thai"
-  ,"english"
-  ,"english_1k"
-  ,"english_10k"
-  ,"english_25k"
-  ,"english_450k"
-  ,"spanish"
-  ,"spanish_1k"
-  ,"spanish_10k"
-  ,"french"
-  ,"french_1k"
-  ,"french_2k"
-  ,"french_10k"
-  ,"arabic"
-  ,"malagasy"
-  ,"malagasy_1k"
-  ,"malay"
-  ,"mongolian"
-  ,"mongolian_10k"
-  ,"russian"
-  ,"russian_1k"
-  ,"russian_10k"
-  ,"portuguese"
-  ,"portuguese_3k"
-  ,"indonesian"
-  ,"indonesian_1k"
-  ,"german"
-  ,"german_1k"
-  ,"german_10k"
-  ,"swiss_german"
-  ,"swiss_german_1k"
-  ,"greek"
-  ,"turkish"
-  ,"irish"
-  ,"italian"
-  ,"italian_1k"
-  ,"italian_7k"
-  ,"polish"
-  ,"polish_2k"
-  ,"polish_200k"
-  ,"czech"
-  ,"czech_1k"
-  ,"czech_10k"
-  ,"slovak"
-  ,"slovak_1k"
-  ,"slovak_10k"
-  ,"slovenian"
-  ,"croatian"
-  ,"dutch"
-  ,"dutch_1k"
-  ,"dutch_10k"
-  ,"filipino"
-  ,"filipino_1k"
-  ,"danish"
-  ,"danish_1k"
-  ,"danish_10k"
-  ,"hungarian"
-  ,"hungarian_2.5k"
-  ,"norwegian"
-  ,"hebrew"
-  ,"icelandic_1k"
-  ,"romanian"
-  ,"finnish"
-  ,"finnish_1k"
-  ,"finnish_10k"
-  ,"persian"
-  ,"kazakh"
-  ,"vietnamese"
-  ,"vietnamese_1k"
-  ,"vietnamese_5k"
-  ,"swedish"
-  ,"swedish_1k"
-  ,"serbian"
-  ,"yoruba_1k"
-  ,"swahili_1k"
-  ,"maori_1k"
-  ,"catalan"
-  ,"catalan_1k"
-  ,"lojban_gismu"
-  ,"lojban_cmavo"
-  ,"lithuanian"
-  ,"lithuanian_1k"
-  ,"lithuanian_3k"
-  ,"bulgarian"
-  ,"toki_pona"
-  ,"twitch_emotes"
-  ,"pig_latin"
-  ,"code_python"
-  ,"code_c"
-  ,"code_csharp"
-  ,"code_c++"
-  ,"code_javascript"
-  ,"code_javascript_1k"
-  ,"code_html"
-  ,"code_java"
-  ,"code_go"
-  ,"code_rust"
-  ,"code_ruby"
-  ,"code_r"
-  ,"code_swift"
+  "Manoonchai v0.3 - Home 01 - นิ้วชี้ [+14w]",
+  "Manoonchai v0.3 - Home 01 - นิ้วชี้ [14w]",
+  "Manoonchai v0.3 - Home 02 - ร [+7w]",
+  "Manoonchai v0.3 - Home 02 - ร [21w]",
+  "Manoonchai v0.3 - Home 03 - สระเอ [+11w]",
+  "Manoonchai v0.3 - Home 03 - สระเอ [32w]",
+  "Manoonchai v0.3 - Home 04 - ง [+13w]",
+  "Manoonchai v0.3 - Home 04 - ง [45w]",
+  "Manoonchai v0.3 - Home 05 - ไม้เอก [+14w]",
+  "Manoonchai v0.3 - Home 05 - ไม้เอก [59w]",
+  "Manoonchai v0.3 - Home 06 - ไม้โท [+16w]",
+  "Manoonchai v0.3 - Home 06 - ไม้โท [75w]",
+  "Manoonchai v0.3 - Home 07 - ว [+26w]",
+  "Manoonchai v0.3 - Home 07 - ว [101w]",
+  "Manoonchai v0.3 - Home 08 - สระอือ [+20w]",
+  "Manoonchai v0.3 - Home 08 - สระอือ [121w]",
+  "Manoonchai v0.3 - Pointing 01 - นิ้วชี้แถวล่าง - ย [+53w]",
+  "Manoonchai v0.3 - Pointing 01 - นิ้วชี้แถวล่าง - ย [174w]",
+  "Manoonchai v0.3 - Pointing 02 - นิ้วชี้แถวล่าง - สระอี [+34w]",
+  "Manoonchai v0.3 - Pointing 02 - นิ้วชี้แถวล่าง - สระอี [208w]",
+  "Manoonchai v0.3 - Pointing 03 - นิ้วชี้แถวบน - ล [+54w]",
+  "Manoonchai v0.3 - Pointing 03 - นิ้วชี้แถวบน - ล [262w]",
+  "Manoonchai v0.3 - Pointing 04 - นิ้วชี้แถวบน - ไม้หันอากาศ [+48w]",
+  "Manoonchai v0.3 - Pointing 04 - นิ้วชี้แถวบน - ไม้หันอากาศ [310w]",
+  "-------------To be continued--------------",
+  "thai_manoonchai_home_row",
+  "thai_manoonchai_home_row_shift",
+  "thai_manoonchai_upper_basic",
+  "thai_manoonchai_upper_basic_shift",
+  "thai_manoonchai_upper_row",
+  "thai_manoonchai_upper_row_shift",
+  "thai_manoonchai_lower_basic",
+  "thai_manoonchai_lower_basic_shift",
+  "thai_manoonchai_lower_row",
+  "thai_manoonchai_lower_row_shift",
+  "thai_300",
+  "thai",
+  "english"
 ]
