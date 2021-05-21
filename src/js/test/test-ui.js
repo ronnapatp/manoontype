@@ -562,6 +562,10 @@ export function updateModesNotice() {
     );
   }
 
+  $(".pageTest #testModesNotice").append(
+    `<div class="text-button keymapModeToggle"><i class="fas fa-keyboard"></i>Keymap Mode (${Config.keymapMode})</div>`
+  );
+
   if (Config.oppositeShiftMode === "on") {
     $(".pageTest #testModesNotice").append(
       `<div class="text-button" commands="commandsOppositeShiftMode"><i class="fas fa-exchange-alt"></i>opposite shift</div>`
@@ -942,3 +946,16 @@ $(document).on("keypress", "#restartTestButtonWithSameWordset", (event) => {
 $("#wordsWrapper").on("click", () => {
   focusWords();
 });
+
+$(document).on(
+  "click",
+  "#testModesNotice .text-button.keymapModeToggle",
+  () => {
+    const modes = ["off", "static", "next", "react"];
+    const index = modes.indexOf(Config.keymapMode);
+    const nextMode = modes[(index + 1) % (modes.length - 1)];
+
+    // Config.keymapMode = nextMode;
+    UpdateConfig.setKeymapMode(nextMode);
+  }
+);
