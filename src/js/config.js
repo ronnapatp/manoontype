@@ -116,7 +116,7 @@ let defaultConfig = {
   minAcc: "off",
   minAccCustom: 90,
   showLiveAcc: false,
-  monkey: false,
+  monkey: true,
   repeatQuotes: "off",
   oppositeShiftMode: "off",
   customBackground: "",
