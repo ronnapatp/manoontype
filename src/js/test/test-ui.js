@@ -953,7 +953,7 @@ $(document).on(
   () => {
     const modes = ["off", "static", "next", "react"];
     const index = modes.indexOf(Config.keymapMode);
-    const nextMode = modes[(index + 1) % (modes.length - 1)];
+    const nextMode = modes[(index + 1) % modes.length];
 
     // Config.keymapMode = nextMode;
     UpdateConfig.setKeymapMode(nextMode);
