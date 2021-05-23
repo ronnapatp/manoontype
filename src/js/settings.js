@@ -122,6 +122,10 @@ async function initGroups() {
     "repeatQuotes",
     UpdateConfig.setRepeatQuotes
   );
+  groups.repeatWords = new SettingsGroup(
+    "repeatWords",
+    UpdateConfig.setRepeatWords
+  );
   groups.enableAds = new SettingsGroup("enableAds", UpdateConfig.setEnableAds);
   groups.alwaysShowWordsHistory = new SettingsGroup(
     "alwaysShowWordsHistory",

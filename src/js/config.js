@@ -124,6 +124,7 @@ let defaultConfig = {
   customBackgroundFilter: [0, 1, 1, 1, 1],
   customLayoutfluid: "qwerty#dvorak#colemak",
   monkeyPowerLevel: "off",
+  repeatWords: "off",
 };
 
 function isConfigKeyValid(name) {
@@ -650,6 +651,14 @@ export function setRepeatQuotes(val, nosave) {
     val = "off";
   }
   config.repeatQuotes = val;
+  if (!nosave) saveToLocalStorage();
+}
+
+export function setRepeatWords(val, nosave) {
+  if (val == undefined || val === true || val === false) {
+    val = "off";
+  }
+  config.repeatWords = val;
   if (!nosave) saveToLocalStorage();
 }
 
@@ -1576,7 +1585,11 @@ export function apply(configObj) {
     setMode(configObj.mode, true);
     setMonkey(configObj.monkey, true);
     setRepeatQuotes(configObj.repeatQuotes, true);
+<<<<<<< HEAD
     setMonkeyPowerLevel(configObj.monkeyPowerLevel, true);
+=======
+    setRepeatWords(configObj.repeatWords, true);
+>>>>>>> c4d9c7bd (:sparkles: Repeat words mode)
 
     LanguagePicker.setActiveGroup();
 

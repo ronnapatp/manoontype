@@ -558,12 +558,16 @@ export function updateModesNotice() {
 
   if (Config.language !== "english") {
     $(".pageTest #testModesNotice").append(
-      `<div class="text-button" commands="commandsLanguages"><i class="fas fa-language"></i>${Config.language}</div>`
+      `<div class="text-button" commands="commandsLanguages"><i class="fas fa-language"></i><span style="font-size: 75%">${Config.language}</span></div>`
     );
   }
 
   $(".pageTest #testModesNotice").append(
-    `<div class="text-button keymapModeToggle"><i class="fas fa-keyboard"></i>Keymap Mode (${Config.keymapMode})</div>`
+    `<div class="text-button keymapModeToggle"><i class="fas fa-hand-paper"></i>Keymap (${Config.keymapMode})</div>`
+  );
+
+  $(".pageTest #testModesNotice").append(
+    `<div class="text-button" commands="commandsRepeatWords"><b style="font-size: 150%">ๆ</b> Repeat (${Config.repeatWords})</div>`
   );
 
   if (Config.oppositeShiftMode === "on") {

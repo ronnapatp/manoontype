@@ -519,6 +519,14 @@ export async function init() {
       }
 
       words.push(randomWord);
+
+      if (Config.repeatWords != "off") {
+        // Repeat same word for n-1 times
+        for (let j = 1; j < Config.repeatWords; j++) {
+          words.push(randomWord);
+          i++;
+        }
+      }
     }
   } else if (Config.mode == "quote") {
     // setLanguage(Config.language.replace(/_\d*k$/g, ""), true);

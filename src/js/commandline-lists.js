@@ -287,6 +287,44 @@ let commandsRepeatQuotes = {
   ],
 };
 
+let commandsRepeatWords = {
+  title: "Change repeat Words...",
+  list: [
+    {
+      id: "setRepeatWordsOff",
+      display: "off",
+      exec: () => {
+        UpdateConfig.setRepeatWords("off");
+        TestLogic.restart();
+      },
+    },
+    {
+      id: "setRepeatWords3",
+      display: "3 Times",
+      exec: () => {
+        UpdateConfig.setRepeatWords(3);
+        TestLogic.restart();
+      },
+    },
+    {
+      id: "setRepeatWords5",
+      display: "5 Times",
+      exec: () => {
+        UpdateConfig.setRepeatWords(5);
+        TestLogic.restart();
+      },
+    },
+    {
+      id: "setRepeatWords10",
+      display: "10 Times",
+      exec: () => {
+        UpdateConfig.setRepeatWords(10);
+        TestLogic.restart();
+      },
+    },
+  ],
+};
+
 let commandsOppositeShiftMode = {
   title: "Change opposite shift mode...",
   list: [
@@ -1458,6 +1496,15 @@ export let defaultCommands = {
       subgroup: true,
       exec: () => {
         current.push(commandsRepeatQuotes);
+        Commandline.show();
+      },
+    },
+    {
+      id: "changeRepeatWords",
+      display: "Change repeat words...",
+      subgroup: true,
+      exec: () => {
+        current.push(commandsRepeatWords);
         Commandline.show();
       },
     },
