@@ -61,10 +61,10 @@ let defaultConfig = {
   punctuation: false,
   numbers: false,
   words: 50,
-  time: 30,
-  mode: "time",
+  time: 60,
+  mode: "words",
   quoteLength: [1],
-  language: "Manoonchai v0.3 [001] Home 01 - นิ้วชี้ [14w]",
+  language: "thai_shorts",
   fontSize: 15,
   freedomMode: false,
   resultFilters: null,
@@ -1585,11 +1585,8 @@ export function apply(configObj) {
     setMode(configObj.mode, true);
     setMonkey(configObj.monkey, true);
     setRepeatQuotes(configObj.repeatQuotes, true);
-<<<<<<< HEAD
     setMonkeyPowerLevel(configObj.monkeyPowerLevel, true);
-=======
     setRepeatWords(configObj.repeatWords, true);
->>>>>>> c4d9c7bd (:sparkles: Repeat words mode)
 
     LanguagePicker.setActiveGroup();
 
