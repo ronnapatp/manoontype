@@ -201,6 +201,13 @@ export function refreshKeys(layout) {
           var key = toReplace[count].charAt(0);
           this.innerHTML = key;
 
+          if (lts.keymapShowShiftedKeys) {
+            const keyShifted = toReplace[count].charAt(1);
+            $(this).siblings(".sub-letter").text(keyShifted);
+          } else {
+            $(this).siblings(".sub-letter").empty();
+          }
+
           switch (key) {
             case "\\":
             case "|":

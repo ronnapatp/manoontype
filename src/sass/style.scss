@@ -3664,7 +3664,7 @@ key {
 }
 
 .row {
-  height: 2rem;
+  height: 3rem;
   gap: 0.25rem;
 }
 
@@ -3678,8 +3678,8 @@ key {
   text-align: center;
   justify-content: center;
   align-items: center;
-  width: 2rem;
-  height: 2rem;
+  width: 3rem;
+  height: 3rem;
   position: relative;
 
   .bump {
@@ -3690,6 +3690,17 @@ key {
     border-radius: var(--roundness);
     // margin-top: 1.5rem;
     bottom: 0.15rem;
+  }
+
+  .letter {
+    font-size: 120%;
+  }
+
+  .sub-letter {
+    position: absolute;
+    top: 0;
+    right: 0.15rem;
+    opacity: 0.8;
   }
 
   &.active-key {
