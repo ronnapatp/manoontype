@@ -3,9 +3,9 @@ const admin = require("firebase-admin");
 let key = "./serviceAccountKey.json";
 let origin = "http://localhost:5000";
 
-if (process.env.GCLOUD_PROJECT === "monkey-type") {
-  key = "./serviceAccountKey_live.json";
-  origin = "https://monkeytype.com";
+if (process.env.GCLOUD_PROJECT.includes("monkey-type")) {
+  key = "./serviceAccountKey.json";
+  origin = "https://manoontype.web.app";
 }
 
 var serviceAccount = require(key);
