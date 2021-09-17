@@ -90,7 +90,7 @@ let defaultConfig = {
   keymapStyle: "staggered",
   keymapLegendStyle: "lowercase",
   keymapLayout: "overrideSync",
-  fontFamily: "Roboto_Mono",
+  fontFamily: "Boon",
   smoothLineScroll: false,
   alwaysShowDecimalPlaces: false,
   alwaysShowWordsHistory: false,

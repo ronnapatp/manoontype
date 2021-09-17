@@ -3957,3 +3957,12 @@ key {
   color: var(--main-color);
   text-decoration: none;
 }
+
+@font-face {
+  font-family: "Boon";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("../webfonts/Boon-400.ttf") format("truetype"),
+    url("../webfonts/Boon-400.otf") format("opentype");
+}
