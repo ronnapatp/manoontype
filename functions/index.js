@@ -1754,8 +1754,9 @@ exports.updateResultTags = functions.https.onCall((request, response) => {
 
 function isConfigKeyValid(name) {
   if (name === null || name === undefined || name === "") return false;
-  if (name.length > 30) return false;
-  return /^[0-9a-zA-Z_.\-#+]+$/.test(name);
+  return true;
+  // if (name.length > 30) return false;
+  // return /^[0-9a-zA-Z_.\-#+]+$/.test(name);
 }
 
 exports.saveConfig = functions.https.onCall((request, response) => {
