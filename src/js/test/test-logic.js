@@ -32,10 +32,12 @@ import * as MonkeyPower from "./monkey-power";
 
 let glarsesMode = false;
 
-export function toggleGlarses(){
+export function toggleGlarses() {
   glarsesMode = true;
-  console.log('Glarses Mode On - test result will be hidden. You can check the stats in the console (here)');
-  console.log('To disable Glarses Mode refresh the page.');
+  console.log(
+    "Glarses Mode On - test result will be hidden. You can check the stats in the console (here)"
+  );
+  console.log("To disable Glarses Mode refresh the page.");
 }
 
 export let notSignedInLastResult = null;
@@ -1304,12 +1306,17 @@ export function finish(difficultyFailed = false) {
     lang = Config.language.replace(/_\d*k$/g, "");
   }
 
+  const isLesson =
+    Config.language.includes("Manoonchai v") && Config.language.includes("w]");
+
   if (difficultyFailed) {
     Notifications.add("Test failed", 0, 1);
   } else if (afkDetected) {
     Notifications.add("Test invalid - AFK detected", 0);
   } else if (isRepeated) {
     Notifications.add("Test invalid - repeated", 0);
+  } else if (isLesson) {
+    console.log("Is Manoonchai Lesson, skipped saving result");
   } else if (
     (Config.mode === "time" && mode2 < 15 && mode2 > 0) ||
     (Config.mode === "time" && mode2 == 0 && testtime < 15) ||
@@ -1860,7 +1867,7 @@ export function finish(difficultyFailed = false) {
   ChartController.result.update({ duration: 0 });
   ChartController.result.resize();
 
-  if(glarsesMode){
+  if (glarsesMode) {
     $("#middle #result .glarsesmessage").remove();
     $("#middle #result").prepend(`
 
@@ -1878,21 +1885,28 @@ export function finish(difficultyFailed = false) {
     $("#middle #result #resultReplay").remove();
     $("#middle #result .loginTip").remove();
 
-    console.log(`Test Completed: ${stats.wpm} wpm ${stats.acc}% acc ${stats.wpmRaw} raw ${consistency}% consistency`);
-
+    console.log(
+      `Test Completed: ${stats.wpm} wpm ${stats.acc}% acc ${stats.wpmRaw} raw ${consistency}% consistency`
+    );
   }
 
-  UI.swapElements($("#typingTest"), $("#result"), 250, () => {
-    TestUI.setResultCalculating(false);
-    $("#words").empty();
-    ChartController.result.resize();
-    if (Config.alwaysShowWordsHistory) {
-      TestUI.toggleResultWords();
+  UI.swapElements(
+    $("#typingTest"),
+    $("#result"),
+    250,
+    () => {
+      TestUI.setResultCalculating(false);
+      $("#words").empty();
+      ChartController.result.resize();
+      if (Config.alwaysShowWordsHistory) {
+        TestUI.toggleResultWords();
+      }
+      $("#testModesNotice").addClass("hidden");
+    },
+    () => {
+      Keymap.hide();
     }
-    $("#testModesNotice").addClass("hidden");
-  }, () => {
-    Keymap.hide();
-  });
+  );
 }
 
 export function fail() {
