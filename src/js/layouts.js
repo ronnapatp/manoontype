@@ -1,5 +1,4 @@
 const layouts = {
-    default: {},
     manoonchai_v03: {
         keymapShowTopRow: false,
         keymapShowShiftedKeys: true,
